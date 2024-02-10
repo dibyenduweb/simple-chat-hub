@@ -2,12 +2,11 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 //import { AuthContext } from '../Provider/AuthProvider';
-import Header from "./Home/Header";
 import { FcGoogle } from "react-icons/fc";
-import useAuth from "../Hooks/useAuth";
+import useAuth from "../../Hooks/useAuth";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import toast from "react-hot-toast";
-import Container from "./Container/Container";
+import Container from "../Container/Container";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -82,7 +81,6 @@ const Login = () => {
 
   return (
     <Container>
-      <Header></Header>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col">
           <div className="text-center ">
@@ -168,5 +166,6 @@ const Login = () => {
     </Container>
   );
 };
+
 
 export default Login;

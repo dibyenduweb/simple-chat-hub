@@ -67,6 +67,7 @@ const AuthProvider = ({ children }) => {
 );
 };
 
+
 export default AuthProvider;
 
 AuthProvider.propTypes = {
